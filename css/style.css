@@ -644,7 +644,7 @@ code {
   border-bottom: none;
 }
 #profile {
-  max-width: 287px;
+  width: 287px;
   display: inline;
   float: left;
   width: 18.736842105263158%;
