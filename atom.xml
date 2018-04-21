@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-21T19:29:47.508Z</updated>
+  <updated>2018-04-21T20:35:43.869Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Front-matter</title>
+    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-Front-matter/"/>
+    <id>http://yoursite.com/wiki/Hexo官方文档-Front-matter/</id>
+    <published>2018-04-22T04:33:16.000Z</published>
+    <updated>2018-04-21T20:35:43.869Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><p>Front-matter 是文件最上方以 <code>---</code> 分隔的区域，用于指定个别文件的变量，举例来说：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2013/7/13 20:46:25</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p><table><thead><tr><th>参数</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td><code>layout</code></td><td>布局</td><td></td></tr><tr><td><code>title</code></td><td>标题</td><td></td></tr><tr><td><code>date</code></td><td>建立日期</td><td>文件建立日期</td></tr><tr><td><code>updated</code></td><td>更新日期</td><td>文件更新日期</td></tr><tr><td><code>comments</code></td><td>开启文章的评论功能</td><td>true</td></tr><tr><td><code>tags</code></td><td>标签（不适用于分页）</td><td></td></tr><tr><td><code>categories</code></td><td>分类（不适用于分页）</td><td></td></tr><tr><td><code>permalink</code></td><td>覆盖文章网址</td></tr></tbody></table><h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">- Diary</span><br><span class="line">tags:</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br></pre></td></tr></table></figure><div class="bs-callout bs-callout-danger"><strong class="note-title" style="font-size:20px">分类方法的分歧</strong><br><br>如果您有过使用WordPress的经验，就很容易误解Hexo的分类方式。WordPress支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是Hexo不支持指定多个同级分类。下面的指定方法：<br>categories:<br>- Diary<br>- Life<br>会使分类<code>Life</code>成为<code>Diary</code>的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</div><h2 id="JSON-Front-matter"><a href="#JSON-Front-matter" class="headerlink" title="JSON Front-matter"></a>JSON Front-matter</h2><p>除了 YAML 外，你也可以使用 JSON 来编写 Front-matter，只要将 <code>---</code> 代换成 <code>;;;</code> 即可。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;title&quot;: &quot;Hello World&quot;,</span><br><span class="line">&quot;date&quot;: &quot;2013/7/13 20:46:25&quot;</span><br><span class="line">;;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Front-matter&quot;&gt;&lt;a href=&quot;#Front-matter&quot; class=&quot;headerlink&quot; title=&quot;Front-matter&quot;&gt;&lt;/a&gt;Front-matter&lt;/h1&gt;&lt;p&gt;Front-matter 是文件最上方以 &lt;code&gt;---
+      
+    
+    </summary>
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/"/>
+    
+      <category term="官方文档" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="2.基本操作" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/2-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="帮助文档" scheme="http://yoursite.com/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>写作</title>
