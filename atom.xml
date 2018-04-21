@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-21T09:06:24.741Z</updated>
+  <updated>2018-04-21T19:29:47.508Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo官方文档</title>
-    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-%E6%A6%82%E8%BF%B0/"/>
-    <id>http://yoursite.com/wiki/Hexo官方文档-概述/</id>
-    <published>2018-04-21T16:11:31.000Z</published>
-    <updated>2018-04-21T09:06:24.741Z</updated>
+    <title>写作</title>
+    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-%E5%86%99%E4%BD%9C/"/>
+    <id>http://yoursite.com/wiki/Hexo官方文档-写作/</id>
+    <published>2018-04-22T03:25:44.000Z</published>
+    <updated>2018-04-21T19:29:47.508Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h2><p>欢迎使用 Hexo，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看 <a href="https://hexo.io/zh-cn/docs/troubleshooting.html" target="_blank" rel="noopener">问题解答</a> 中的解答，或者在 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>、<a href="https://groups.google.com/forum/#!forum/hexo" target="_blank" rel="noopener">Google Group</a> 上提问。</p><h3 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="https://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a> （或其他渲染引擎） 解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装 Hexo 只需几分钟时间，若您在安装过程中遇到问题或无法找到解决方式，请<a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">提交问题</a>，我会尽力解决您的问题。</p><h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p><ul><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li><li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li></ul><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p><p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p><div class="bs-callout bs-callout-danger"><strong class="note-title" style="font-size:20px">Mac 用户</strong><br><br>您在编译时可能会遇到问题，请先到 App Store 安装 Xcode，Xcode 完成后，启动并进入 Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install 安装命令行工具。<br></div>]]></content>
+    <content type="html"><![CDATA[<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><p>你可以执行下列命令来创建一篇新文章。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>您可以在命令中指定文章的布局（layout），默认为 <code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。</p><h3 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h3><p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p><table><thead><tr><th>布局</th><th>路径</th></tr></thead><tbody><tr><td><code>post</code></td><td><code>source/_posts</code></td></tr><tr><td><code>page</code></td><td><code>source</code></td></tr><tr><td><code>draft</code></td><td><code>source/_drafts</code></td></tr></tbody></table><div class="bs-callout bs-callout-warning"><strong class="note-title" style="font-size:20px">不要处理我的文章</strong><br><br>如果你不想你的文章被处理，你可以将 Front-Matter 中的<code>layout:</code> 设为 <code>false</code> 。</div><h3 id="文件名称"><a href="#文件名称" class="headerlink" title="文件名称"></a>文件名称</h3><p>Hexo 默认以标题做为文件名称，但您可编辑 <code>new_post_name</code> 参数来改变默认的文件名称，举例来说，设为 <code>:year-:month-:day-:title.md</code> 可让您更方便的通过日期来管理文章。</p><table><thead><tr><th>变量</th><th>描述</th></tr></thead><tbody><tr><td><code>:title</code></td><td>标题（小写，空格将会被替换为短杠）</td></tr><tr><td><code>:year</code></td><td>建立的年份，比如， <code>2015</code></td></tr><tr><td><code>:month</code></td><td>建立的月份（有前导零），比如， <code>04</code></td></tr><tr><td><code>:i_month</code></td><td>建立的月份（无前导零），比如， <code>4</code></td></tr><tr><td><code>:day</code></td><td>建立的日期（有前导零），比如， <code>07</code></td></tr><tr><td><code>:i_day</code></td><td>建立的日期（无前导零），比如， <code>7</code></td></tr></tbody></table><h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><p>刚刚提到了 Hexo 的一种特殊布局：<code>draft</code>，这种布局在建立时会被保存到 <code>source/_drafts</code> 文件夹，您可通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹，该命令的使用方式与 <code>new</code>十分类似，您也可在命令中指定 <code>layout</code> 来指定布局。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>草稿默认不会显示在页面中，您可在执行时加上 <code>--draft</code> 参数，或是把 <code>render_drafts</code> 参数设为 <code>true</code> 来预览草稿。</p><h2 id="模版（Scaffold）"><a href="#模版（Scaffold）" class="headerlink" title="模版（Scaffold）"></a>模版（Scaffold）</h2><p>在新建文章时，Hexo 会根据 <code>scaffolds</code> 文件夹内相对应的文件来建立文件，例如：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new photo &quot;My Gallery&quot;</span><br></pre></td></tr></table></figure><p>在执行这行指令时，Hexo 会尝试在 <code>scaffolds</code> 文件夹中寻找 <code>photo.md</code>，并根据其内容建立文章，以下是您可以在模版中使用的变量：</p><table><thead><tr><th>变量</th><th>描述</th></tr></thead><tbody><tr><td><code>layout</code></td><td>布局</td></tr><tr><td><code>title</code></td><td>标题</td></tr><tr><td><code>date</code></td><td>文件建立日期</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;文档&quot;&gt;&lt;a href=&quot;#文档&quot; class=&quot;headerlink&quot; title=&quot;文档&quot;&gt;&lt;/a&gt;文档&lt;/h2&gt;&lt;p&gt;欢迎使用 Hexo，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看 &lt;a href=&quot;https://hexo.io/zh-cn
+        &lt;h1 id=&quot;写作&quot;&gt;&lt;a href=&quot;#写作&quot; class=&quot;headerlink&quot; title=&quot;写作&quot;&gt;&lt;/a&gt;写作&lt;/h1&gt;&lt;p&gt;你可以执行下列命令来创建一篇新文章。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td 
       
     
     </summary>
@@ -41,6 +42,195 @@
       <category term="hexo" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/"/>
     
       <category term="官方文档" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="2.基本操作" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/2-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="帮助文档" scheme="http://yoursite.com/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>迁移</title>
+    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-%E8%BF%81%E7%A7%BB/"/>
+    <id>http://yoursite.com/wiki/Hexo官方文档-迁移/</id>
+    <published>2018-04-22T03:22:14.000Z</published>
+    <updated>2018-04-21T19:29:14.594Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h1><h2 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h2><p>首先，安装 <code>hexo-migrator-rss</code> 插件。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-rss --save</span><br></pre></td></tr></table></figure><p>插件安装完成后，执行下列命令，从 RSS 迁移所有文章。<code>source</code>可以是文件路径或网址。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate rss &lt;source&gt;</span><br></pre></td></tr></table></figure><h2 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h2><p>把 <code>_posts</code> 文件夹内的所有文件复制到 <code>source/_posts</code> 文件夹，并在 <code>_config.yml</code> 中修改 <code>new_post_name</code> 参数。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure><h2 id="Octopress"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</h2><p>把 Octopress <code>source/_posts</code> 文件夹内的所有文件转移到 Hexo 的 <code>source/_posts</code> 文件夹，并修改 <code>_config.yml</code> 中的 <code>new_post_name</code> 参数。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure><h2 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h2><p>首先，安装 <code>hexo-migrator-wordpress</code> 插件。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure><p>在 WordPress 仪表盘中导出数据(“Tools” → “Export” → “WordPress”)（详情参考<a href="http://en.support.wordpress.com/export/" target="_blank" rel="noopener">WP支持页面</a>）。</p><p>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 WordPress 导出的文件路径或网址。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate wordpress &lt;source&gt;</span><br></pre></td></tr></table></figure><div class="bs-callout bs-callout-danger"><strong class="note-title" style="font-size:20px">注意</strong><br><br>这个插件并不能完美地实现WordPress-&gt;Hexo的数据转换，尤其是在处理WordPress的分类方面存在问题（见<a href="https://hexo.io/zh-cn/docs/front-matter.html" target="_blank" rel="noopener">Front-matter中的分类与标签</a>）。因此，建议您在迁移完成后，手工审阅所有生成的markdown文件，检查其中是否有错误。对于文章数量较大的WordPress站点，这项工作可能要花很长的时间。</div><h2 id="Joomla"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</h2><p>首先，安装 <code>hexo-migrator-joomla</code> 插件。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-joomla --save</span><br></pre></td></tr></table></figure><p>使用 <a href="http://extensions.joomla.org/extensions/migration-a-conversion/data-import-a-export/12816?qh=YToxOntpOjA7czo1OiJqMnhtbCI7fQ%3D%3D" target="_blank" rel="noopener">J2XML</a> 组件导出 Joomla 文章。<br>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 Joomla 导出的文件路径或网址。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate joomla &lt;source&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;迁移&quot;&gt;&lt;a href=&quot;#迁移&quot; class=&quot;headerlink&quot; title=&quot;迁移&quot;&gt;&lt;/a&gt;迁移&lt;/h1&gt;&lt;h2 id=&quot;RSS&quot;&gt;&lt;a href=&quot;#RSS&quot; class=&quot;headerlink&quot; title=&quot;RSS&quot;&gt;&lt;/a&gt;RSS&lt;/h2&gt;&lt;p
+      
+    
+    </summary>
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/"/>
+    
+      <category term="官方文档" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="1.开始使用" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/1-%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="帮助文档" scheme="http://yoursite.com/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>指令</title>
+    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/wiki/Hexo官方文档-命令/</id>
+    <published>2018-04-22T02:38:17.000Z</published>
+    <updated>2018-04-21T19:29:04.665Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h1><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init [folder]</span><br></pre></td></tr></table></figure><p>新建一个网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。</p><h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>新建一篇文章。如果没有设置 <code>layout</code> 的话，默认使用 <a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">_config.yml</a>中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。</p><h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>生成静态文件。</p><table><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td><code>-d</code>, <code>--deploy</code></td><td>文件生成后立即部署网站</td></tr><tr><td><code>-w</code>, <code>--watch</code></td><td>监视文件变动</td></tr></tbody></table><p>该命令可以简写为</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure><p>发表草稿。</p><h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p><table><thead><tr><th>选项</th><th>描述</th></tr></thead><tbody><tr><td><code>-p</code>, <code>--port</code></td><td>重设端口</td></tr><tr><td><code>-s</code>, <code>--static</code></td><td>只使用静态文件</td></tr><tr><td><code>-l</code>, <code>--log</code></td><td>启动日记记录，使用覆盖记录格式</td></tr></tbody></table><h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>部署网站。</p><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td><code>-g</code>, <code>--generate</code></td><td>部署之前预先生成静态文件</td></tr></tbody></table><p>该命令可以简写为：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h2 id="render"><a href="#render" class="headerlink" title="render"></a>render</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure><p>渲染文件。</p><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td><code>-o</code>, <code>--output</code></td><td>设置输出路径</td></tr></tbody></table><h2 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo migrate &lt;type&gt;</span><br></pre></td></tr></table></figure><p>从其他博客系统 <a href="https://hexo.io/zh-cn/docs/migration.html" target="_blank" rel="noopener">迁移内容</a>。</p><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p><p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p><h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;</span><br></pre></td></tr></table></figure><p>列出网站资料。</p><h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo version</span><br></pre></td></tr></table></figure><p>显示 Hexo 版本。</p><h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --safe</span><br></pre></td></tr></table></figure><p>在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p><h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --debug</span><br></pre></td></tr></table></figure><p>在终端中显示调试信息并记录到 <code>debug.log</code>。当您碰到问题时，可以尝试用调试模式重新执行一次，并 <a href="https://github.com/hexojs/hexo/issues/new" target="_blank" rel="noopener">提交调试信息到 GitHub</a>。</p><h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --silent</span><br></pre></td></tr></table></figure><p>隐藏终端信息。</p><h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --config custom.yml</span><br></pre></td></tr></table></figure><p>自定义配置文件的路径，执行后将不再使用 <code>_config.yml</code>。</p><h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --draft</span><br></pre></td></tr></table></figure><p>显示 <code>source/_drafts</code> 文件夹中的草稿文章。</p><h3 id="自定义-CWD"><a href="#自定义-CWD" class="headerlink" title="自定义 CWD"></a>自定义 CWD</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo --cwd /path/to/cwd</span><br></pre></td></tr></table></figure><p>自定义当前工作目录（Current working directory）的路径。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;指令&quot;&gt;&lt;a href=&quot;#指令&quot; class=&quot;headerlink&quot; title=&quot;指令&quot;&gt;&lt;/a&gt;指令&lt;/h1&gt;&lt;h2 id=&quot;init&quot;&gt;&lt;a href=&quot;#init&quot; class=&quot;headerlink&quot; title=&quot;init&quot;&gt;&lt;/a&gt;init&lt;/h
+      
+    
+    </summary>
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/"/>
+    
+      <category term="官方文档" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="1.开始使用" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/1-%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="帮助文档" scheme="http://yoursite.com/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>配置</title>
+    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/wiki/Hexo官方文档-配置/</id>
+    <published>2018-04-22T02:29:00.000Z</published>
+    <updated>2018-04-21T19:29:19.994Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>您可以在 <code>_config.yml</code> 中修改大部份的配置。</p><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td><code>title</code></td><td>网站标题</td></tr><tr><td><code>subtitle</code></td><td>网站副标题</td></tr><tr><td><code>description</code></td><td>网站描述</td></tr><tr><td><code>author</code></td><td>您的名字</td></tr><tr><td><code>language</code></td><td>网站使用的语言</td></tr><tr><td><code>timezone</code></td><td>网站时区。Hexo 默认使用您电脑的时区。<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="noopener">时区列表</a>。比如说：<code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。</td></tr></tbody></table><p>其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</p><h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><table><thead><tr><th>参数</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td><code>url</code></td><td>网址</td><td></td></tr><tr><td><code>root</code></td><td>网站根目录</td><td></td></tr><tr><td><code>permalink</code></td><td>文章的 <a href="https://hexo.io/zh-cn/docs/permalinks.html" target="_blank" rel="noopener">永久链接</a>格式</td><td><code>:year/:month/:day/:title/</code></td></tr><tr><td><code>permalink_defaults</code></td><td>永久链接中各部分的默认值</td></tr></tbody></table><div class="bs-callout bs-callout-info"> <strong class="note-title" style="font-size:20px">网站存放在子目录</strong><br><br>如果您的网站存放在子目录中，例如 <code>http://yoursite.com/blog</code>，则请将您的 <code>url</code> 设为 <code>http://yoursite.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code>。</div><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><table><thead><tr><th>参数</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td><code>source_dir</code></td><td>资源文件夹，这个文件夹用来存放内容。</td><td><code>source</code></td></tr><tr><td><code>public_dir</code></td><td>公共文件夹，这个文件夹用于存放生成的站点文件。</td><td><code>public</code></td></tr><tr><td><code>tag_dir</code></td><td>标签文件夹</td><td><code>tags</code></td></tr><tr><td><code>archive_dir</code></td><td>归档文件夹</td><td><code>archives</code></td></tr><tr><td><code>category_dir</code></td><td>分类文件夹</td><td><code>categories</code></td></tr><tr><td><code>code_dir</code></td><td>Include code 文件夹</td><td><code>downloads/code</code></td></tr><tr><td><code>i18n_dir</code></td><td>国际化（i18n）文件夹</td><td><code>:lang</code></td></tr><tr><td><code>skip_render</code></td><td>跳过指定文件的渲染，您可使用 <a href="https://github.com/isaacs/node-glob" target="_blank" rel="noopener">glob 表达式</a>来匹配路径。</td></tr></tbody></table><div class="bs-callout bs-callout-info"> <strong class="note-title" style="font-size:20px">提示</strong><br><br>如果您刚刚开始接触Hexo，通常没有必要修改这一部分的值。</div><h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><table><thead><tr><th>参数</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td><code>new_post_name</code></td><td>新文章的文件名称</td><td>:title.md</td></tr><tr><td><code>default_layout</code></td><td>预设布局</td><td>post</td></tr><tr><td><code>auto_spacing</code></td><td>在中文和英文之间加入空格</td><td>false</td></tr><tr><td><code>titlecase</code></td><td>把标题转换为 title case</td><td>false</td></tr><tr><td><code>external_link</code></td><td>在新标签中打开链接</td><td>true</td></tr><tr><td><code>filename_case</code></td><td>把文件名称转换为 (1) 小写或 (2) 大写</td><td>0</td></tr><tr><td><code>render_drafts</code></td><td>显示草稿</td><td>false</td></tr><tr><td><code>post_asset_folder</code></td><td>启动 <a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener">Asset 文件夹</a></td><td>false</td></tr><tr><td><code>relative_link</code></td><td>把链接改为与根目录的相对位址</td><td>false</td></tr><tr><td><code>future</code></td><td>显示未来的文章</td><td>true</td></tr><tr><td><code>highlight</code></td><td>代码块的设置</td></tr></tbody></table><div class="bs-callout bs-callout-info"> <strong class="note-title" style="font-size:20px">相对地址</strong><br>默认情况下，Hexo生成的超链接都是绝对地址。例如，如果您的网站域名为<code>example.com</code>,您有一篇文章名为<code>hello</code>，那么绝对链接可能像这样：<code>http://example.com/hello.html</code>，它是<strong>绝对</strong>于域名的。相对链接像这样：<code>/hello.html</code>，也就是说，无论用什么域名访问该站点，都没有关系，这在进行反向代理时可能用到。通常情况下，建议使用绝对地址。</div><h2 id="分类-amp-标签"><a href="#分类-amp-标签" class="headerlink" title="分类 &amp; 标签"></a>分类 &amp; 标签</h2><table><thead><tr><th>参数</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td><code>default_category</code></td><td>默认分类</td><td><code>uncategorized</code></td></tr><tr><td><code>category_map</code></td><td>分类别名</td><td></td></tr><tr><td><code>tag_map</code></td><td>标签别名</td></tr></tbody></table><h2 id="日期-时间格式"><a href="#日期-时间格式" class="headerlink" title="日期 / 时间格式"></a>日期 / 时间格式</h2><p>Hexo 使用 <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a> 来解析和显示时间。</p><table><thead><tr><th>参数</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td><code>date_format</code></td><td>日期格式</td><td><code>YYYY-MM-DD</code></td></tr><tr><td><code>time_format</code></td><td>时间格式</td><td><code>H:mm:ss</code></td></tr></tbody></table><h2 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h2><table><thead><tr><th>参数</th><th>描述</th><th>默认值</th></tr></thead><tbody><tr><td><code>per_page</code></td><td>每页显示的文章量 (0 = 关闭分页功能)</td><td><code>10</code></td></tr><tr><td><code>pagination_dir</code></td><td>分页目录</td><td><code>page</code></td></tr></tbody></table><h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><table><thead><tr><th>参数</th><th>描述</th></tr></thead><tbody><tr><td><code>theme</code></td><td>当前主题名称。值为<code>false</code>时禁用主题</td></tr><tr><td><code>deploy</code></td><td>部署部分的设置</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h1&gt;&lt;p&gt;您可以在 &lt;code&gt;_config.yml&lt;/code&gt; 中修改大部份的配置。&lt;/p&gt;
+&lt;h2 id=&quot;网站&quot;&gt;&lt;a href=&quot;#网站&quot;
+      
+    
+    </summary>
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/"/>
+    
+      <category term="官方文档" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="1.开始使用" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/1-%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="帮助文档" scheme="http://yoursite.com/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>建站</title>
+    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-%E5%BB%BA%E7%AB%99/"/>
+    <id>http://yoursite.com/wiki/Hexo官方文档-建站/</id>
+    <published>2018-04-22T01:24:32.000Z</published>
+    <updated>2018-04-21T19:29:09.586Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><p>新建完成后，指定文件夹的目录如下：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure><h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的 <a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">配置</a> 信息，您可以在此配置大部分的参数。</p><h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p>应用程序的信息。<a href="http://embeddedjs.com/" target="_blank" rel="noopener">EJS</a>, <a href="http://learnboost.github.io/stylus/" target="_blank" rel="noopener">Stylus</a> 和 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a> renderer 已默认安装，您可以自由移除。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">package.json&#123;</span><br><span class="line">  &quot;name&quot;: &quot;hexo-site&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;0.0.0&quot;,</span><br><span class="line">  &quot;private&quot;: true,</span><br><span class="line">  &quot;hexo&quot;: &#123;</span><br><span class="line">    &quot;version&quot;: &quot;&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;dependencies&quot;: &#123;</span><br><span class="line">    &quot;hexo&quot;: &quot;^3.0.0&quot;,</span><br><span class="line">    &quot;hexo-generator-archive&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-generator-category&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-generator-index&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-generator-tag&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-ejs&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-stylus&quot;: &quot;^0.2.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-marked&quot;: &quot;^0.2.4&quot;,</span><br><span class="line">    &quot;hexo-server&quot;: &quot;^0.1.2&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3><p><a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">模版</a> 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。</p><p>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p><h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p><h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p><a href="https://hexo.io/zh-cn/docs/themes.html" target="_blank" rel="noopener">主题</a> 文件夹。Hexo 会根据主题来生成静态页面。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;建站&quot;&gt;&lt;a href=&quot;#建站&quot; class=&quot;headerlink&quot; title=&quot;建站&quot;&gt;&lt;/a&gt;建站&lt;/h1&gt;&lt;p&gt;安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。&lt;/p&gt;
+&lt;figure class=&quot;highlig
+      
+    
+    </summary>
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/"/>
+    
+      <category term="官方文档" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="1.开始使用" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/1-%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="帮助文档" scheme="http://yoursite.com/tags/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>概述</title>
+    <link href="http://yoursite.com/wiki/Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3-%E6%A6%82%E8%BF%B0/"/>
+    <id>http://yoursite.com/wiki/Hexo官方文档-概述/</id>
+    <published>2018-04-21T16:11:31.000Z</published>
+    <updated>2018-04-21T19:28:59.445Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>欢迎使用 Hexo，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看 <a href="https://hexo.io/zh-cn/docs/troubleshooting.html" target="_blank" rel="noopener">问题解答</a> 中的解答，或者在 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>、<a href="https://groups.google.com/forum/#!forum/hexo" target="_blank" rel="noopener">Google Group</a> 上提问。</p><h3 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="https://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a> （或其他渲染引擎） 解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装 Hexo 只需几分钟时间，若您在安装过程中遇到问题或无法找到解决方式，请<a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">提交问题</a>，我会尽力解决您的问题。</p><h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p><ul><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li><li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li></ul><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p><p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p><div class="bs-callout bs-callout-danger"><strong class="note-title" style="font-size:20px">Mac 用户</strong><br><br>您在编译时可能会遇到问题，请先到 App Store 安装 Xcode，Xcode 完成后，启动并进入 <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> 安装命令行工具。<br></div><h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><ul><li>Windows: 下载并安装 <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a>.</li><li>Mac 使用 <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="noopener">Homebrew</a>,<a href="http://www.macports.org/" target="_blank" rel="noopener">MacPorts</a>: <code>brew install git</code>;或下载 <a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="noopener">安装程序</a> 安装。</li><li>Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code></li><li>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code></li></ul><div class="bs-callout bs-callout-danger"> <strong class="note-title" style="font-size:20px">Windows 用户</strong><br><br>由于众所周知的原因，从上面的链接下载git for windows最好挂上一个代理，否则下载速度十分缓慢。也可以参考<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">这个页面</a>，收录了存储于百度云的下载地址。</div><h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>安装 Node.js 的最佳方式是使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a>。</p><p>Curl:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure><p>Wget:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure><p>安装完成后，重启终端并执行下列命令即可安装 Node.js。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ nvm install stable</span><br></pre></td></tr></table></figure><p>或者您也可以下载 <a href="http://nodejs.org/" target="_blank" rel="noopener">安装程序</a> 来安装。</p><div class="bs-callout bs-callout-danger"> <strong class="note-title" style="font-size:20px">Windows 用户</strong><br><br>对于windows用户来说，建议使用安装程序进行安装。安装时，请勾选<strong>Add to PATH</strong>选项。<br>另外，您也可以使用<strong>Git Bash</strong>，这是git for windows自带的一组程序，提供了Linux风格的shell，在该环境下，您可以直接用上面提到的命令来安装Node.js。打开它的方法很简单，在任意位置单击右键，选择“Git Bash Here”即可。由于Hexo的很多操作都涉及到命令行，您可以考虑始终使用<strong>Git Bash</strong>来进行操作。</div><h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;欢迎使用 Hexo，本文档将帮助您快速上手。如果您在使用过程中遇到问题，请查看 &lt;a href=&quot;https://hexo.io/zh-cn
+      
+    
+    </summary>
+    
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/"/>
+    
+      <category term="官方文档" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    
+      <category term="1.开始使用" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/%E5%8D%9A%E5%AE%A2/hexo/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/1-%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
