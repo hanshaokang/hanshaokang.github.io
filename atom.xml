@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-21T07:38:17.144Z</updated>
+  <updated>2018-04-21T07:42:51.781Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>欢迎</title>
-    <link href="http://yoursite.com/wiki/inde1x/"/>
-    <id>http://yoursite.com/wiki/inde1x/</id>
-    <published>2018-04-21T07:38:17.144Z</published>
-    <updated>2018-04-21T07:38:17.144Z</updated>
+    <link href="http://yoursite.com/wiki/index/"/>
+    <id>http://yoursite.com/wiki/index/</id>
+    <published>2018-04-21T07:42:51.778Z</published>
+    <updated>2018-04-21T07:42:51.781Z</updated>
     
     <content type="html"><![CDATA[<h3 id="欢迎来到我的博客"><a href="#欢迎来到我的博客" class="headerlink" title="欢迎来到我的博客"></a>欢迎来到我的博客</h3><p>之前接触过各种各样的博客系统，有 <a href="https://cn.wordpress.org/" target="_blank" rel="noopener">WordPress</a>, 有<a href="https://www.zblogcn.com/" target="_blank" rel="noopener">zblog</a>。 最终落户<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>。相比于其它博客系统，基于gitpage搭建Hexo省去了网站维护的麻烦，专注于文章的写作，是一款专为博客而生的系统。</p><p>在学习知识的过程中，发现自己薄弱的记忆力无法承载浩瀚的知识海洋，经常学过就忘，等再次用还得接着去谷歌，百度，逛论坛。于是萌生了组织自己的知识库的想法。</p><p>这是我第一次将自己的博客放到公网上边，也是我第一次正式写博客，如果有什么好的建议或者发现哪些问题，欢迎到评论区留言，我会积极回复的。</p>]]></content>
     
