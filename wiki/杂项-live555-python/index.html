@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="韩绍康的知识库">
 <meta property="og:description" content="问题产生通过pip安装live555发现问题，找不到头文件查看pip下载的源码说明后赫然发现，尼玛pip只下载了Python安装脚本，但是live555的源码并没有下载。。。 手动安装安装环境 Python3.5 linux版本 deepin 15.6 gcc版本 4.8.5 (Debian 4.8.5-4)   安装准备 创建安装临时文件夹 12$ mkdir /tmp/test$ cd /tm">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-23T07:53:55.000Z">
+<meta property="og:updated_time" content="2018-04-23T08:08:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="live555-python">
 <meta name="twitter:description" content="问题产生通过pip安装live555发现问题，找不到头文件查看pip下载的源码说明后赫然发现，尼玛pip只下载了Python安装脚本，但是live555的源码并没有下载。。。 手动安装安装环境 Python3.5 linux版本 deepin 15.6 gcc版本 4.8.5 (Debian 4.8.5-4)   安装准备 创建安装临时文件夹 12$ mkdir /tmp/test$ cd /tm">
@@ -540,7 +540,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="编译Python库文件"><a href="#编译Python库文件" class="headerlink" title="编译Python库文件"></a>编译<code>Python</code>库文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ../</span><br><span class="line">$ sudo python3 setup.py build</span><br></pre></td></tr></table></figure>
+<h3 id="编译Python库文件"><a href="#编译Python库文件" class="headerlink" title="编译Python库文件"></a>编译<code>Python</code>库文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ../</span><br><span class="line">$ sudo python3 setup.py build</span><br><span class="line">$ sudo python3 setup.py install</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>如果发现报错说明之前没按照我的步骤来，依次运行如下命令，然后从预编译live555重试。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo rm /usr/<span class="built_in">local</span>/lib/libBasicUsageEnvironment.a  /usr/<span class="built_in">local</span>/lib/libgroupsock.a  /usr/<span class="built_in">local</span>/lib/libliveMedia.a  /usr/<span class="built_in">local</span>/lib/libUsageEnvironment.a</span><br><span class="line">$ <span class="built_in">cd</span> live</span><br><span class="line">$ sudo make clean</span><br></pre></td></tr></table></figure>
