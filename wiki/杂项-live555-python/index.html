@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="韩绍康的知识库">
 <meta property="og:description" content="问题产生通过pip安装live555发现问题，找不到头文件查看pip下载的源码说明后赫然发现，尼玛pip只下载了Python安装脚本，但是live555的源码并没有下载。。。 手动安装安装环境 Python3.5 linux版本 deepin 15.6 gcc版本 4.8.5 (Debian 4.8.5-4)   安装准备 创建安装临时文件夹 12$ mkdir /tmp/test$ cd /tm">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-23T07:26:48.000Z">
+<meta property="og:updated_time" content="2018-04-23T07:53:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="live555-python">
 <meta name="twitter:description" content="问题产生通过pip安装live555发现问题，找不到头文件查看pip下载的源码说明后赫然发现，尼玛pip只下载了Python安装脚本，但是live555的源码并没有下载。。。 手动安装安装环境 Python3.5 linux版本 deepin 15.6 gcc版本 4.8.5 (Debian 4.8.5-4)   安装准备 创建安装临时文件夹 12$ mkdir /tmp/test$ cd /tm">
@@ -491,7 +491,7 @@
             
                 <div id="toc" class="toc-article">
                 <strong class="toc-title">文章目录</strong>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题产生"><span class="toc-text">问题产生</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手动安装"><span class="toc-text">手动安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装环境"><span class="toc-text">安装环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装准备"><span class="toc-text">安装准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预编译live555"><span class="toc-text">预编译live555</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编译Python库文件"><span class="toc-text">编译Python库文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试是否安装成功"><span class="toc-text">测试是否安装成功</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题产生"><span class="toc-text">问题产生</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手动安装"><span class="toc-text">手动安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装环境"><span class="toc-text">安装环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装准备"><span class="toc-text">安装准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预编译live555"><span class="toc-text">预编译live555</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编译Python库文件"><span class="toc-text">编译Python库文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#测试是否安装成功"><span class="toc-text">测试是否安装成功</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题汇总"><span class="toc-text">问题汇总</span></a></li></ol></li></ol>
                 </div>
             
         
@@ -553,6 +553,12 @@
 <p>运行 Python 文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 test.py</span><br></pre></td></tr></table></figure>
 <p>若输出<code>live555</code>则安装成功。</p>
+<h3 id="问题汇总"><a href="#问题汇总" class="headerlink" title="问题汇总"></a>问题汇总</h3><ul>
+<li><p>找不到<code>Python.h</code></p>
+<p>没有装<code>Python-dev</code>环境，输入以下命令安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python3-dev -y</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
             </div>
         
